@@ -48,6 +48,16 @@ services:
       - "3100:3100"
     command: -config.file=/etc/loki/local-config.yaml
 
+  tempo:
+    image: grafana/tempo:2.3.1
+    container_name: abre-tempo
+    command: [ "-config.file=/etc/tempo.yaml" ]
+    volumes:
+      - ./tempo.yaml:/etc/tempo.yaml
+    ports:
+      - "3200:3200"
+      - "4317:4317"
+
 volumes:
   postgres-data:
   grafana-data:
