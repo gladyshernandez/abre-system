@@ -22,3 +22,25 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Secrets
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+dist/
+.venv/
+venv/
+
+# Eval reports (generated output, not source)
+eval/reports/
+
+# IntelliJ (extra safety)
+*.iml
+
+# IntelliJ workspace
+.idea/
