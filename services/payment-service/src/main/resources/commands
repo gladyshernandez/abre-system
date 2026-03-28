@@ -1,0 +1,9 @@
+
+
+Command to test full order flow:
+Invoke-RestMethod -Method POST -Uri "http://localhost:8080/route/orders" -ContentType "application/json" -Body '{"customerId":"cust-1","amount":99.99}'
+OR
+curl.exe -X POST http://localhost:8080/route/orders -H "Content-Type: application/json" -d "{\"customerId\":\"cust-1\",\"amount\":99.99}"
+
+Healthcheck command:
+curl.exe http://localhost:8080/health
