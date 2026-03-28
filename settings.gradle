@@ -1,0 +1,5 @@
+rootProject.name = 'abre-system'
+
+include 'services:gateway-service'
+include 'services:order-service'
+include 'services:payment-service'
