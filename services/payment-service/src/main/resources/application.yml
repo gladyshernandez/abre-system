@@ -8,6 +8,9 @@ spring:
 payment:
   failure-rate: 0.0
 
+demo:
+  api-key: ${DEMO_API_KEY:test-key}
+
 management:
   endpoints:
     web:

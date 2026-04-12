@@ -11,6 +11,9 @@ order:
 payment:
   service-url: http://localhost:8082
 
+demo:
+  api-key: ${DEMO_API_KEY:test-key}
+
 management:
   endpoints:
     web:
